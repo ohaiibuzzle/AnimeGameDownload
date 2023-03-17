@@ -23,3 +23,15 @@ button {
     flex-direction: row;
     justify-content: space-between;
 }
+
+#footer {
+    /* put footer at the bottom of the page */
+    position: fixed;
+    bottom: 0;
+}
+
+#disclaimer {
+    /* tiny text with hard to read color (gray-ish) (we don't want it to be too obvious) */
+    font-size: 0.5em;
+    color: #808080;
+}
