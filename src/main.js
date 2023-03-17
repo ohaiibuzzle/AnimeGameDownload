@@ -4,6 +4,11 @@ let arrayofjokes = [
     "Clearly Cyno has not fixed the installer yet",
     "I'm not sure if this is a bug or a feature",
     "Coming soon in PlayCover Hourly",
+    "PCTT stands for what we get working on PlayCover: PlayCutt",
+    "Mining bitcoin on your browser",
+    "Did you try turning your Mac off and on again?",
+    "Keyboard not found. Press F1 to continue",
+    "Brain not found. Tap with hammer to continue",
 ]
 
 function openLink1() {
