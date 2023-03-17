@@ -21,6 +21,13 @@ button {
     color: #ffffff;
 }
 
+div[id=buttons]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #veryLegitConfirmations {
     display: flex;
     flex-direction: row;

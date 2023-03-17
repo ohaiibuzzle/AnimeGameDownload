@@ -12,13 +12,44 @@ let arrayofjokes = [
 ]
 
 function openLink1() {
-    // Open rickroll link
-    window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    // Store the original button text
+    let originalText = document.getElementById("link1btn").textContent;
+    // Disable the #link1btn button
+    document.getElementById("link1btn").disabled = true;
+    // 60 seconds timer that updates the button text
+    let timer = 60;
+    let interval = setInterval(function() {
+        document.getElementById("link1btn").textContent = "Downloading in " + timer + " seconds";
+        timer--;
+        if (timer < 0) {
+            clearInterval(interval);        
+            // Navigate to rickroll
+            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        }
+    }, 1000);
+    // Re-enable the #link1btn button after 60 seconds
+    setTimeout(function() {
+        document.getElementById("link1btn").disabled = false;
+        document.getElementById("link1btn").textContent = originalText;
+    }, timer * 1000);
 }
 
 function openLink2() {
-    // Open rickroll but different link
-    window.open("https://www.youtube.com/watch?v=iik25wqIuFo");
+    // Store the original button text
+    let originalText = document.getElementById("link2btn").innerHTML;
+    // Disable the #link2btn button
+    document.getElementById("link2btn").disabled = true;
+    // 60 seconds timer that updates the button text
+    let timer = 60;
+    let interval = setInterval(function() {
+        document.getElementById("link2btn").innerHTML = "Downloading in " + timer + " seconds";
+        timer--;
+        if (timer < 0) {
+            clearInterval(interval);
+            // Navigate to alternative rickroll
+            window.location.href = "https://www.youtube.com/watch?v=iik25wqIuFo";
+        }
+    }, 1000);
 }
 
 window.onload = function() {
