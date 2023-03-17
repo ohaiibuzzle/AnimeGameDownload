@@ -16,7 +16,7 @@ function openLink2() {
     window.open("https://www.youtube.com/watch?v=iik25wqIuFo");
 }
 
-function onload() {
+window.onload = function() {
     // replace the h2 element with id date with the current date
     document.getElementById("date").innerHTML = " " + new Date().toDateString() + " ";
 
