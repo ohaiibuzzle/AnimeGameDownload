@@ -16,6 +16,9 @@ button {
     max-width: 800px;
     padding: 10px;
     border: 1px solid #ffffff;
+    /* dark gray background color with white text */
+    background-color: #222222;
+    color: #ffffff;
 }
 
 #veryLegitConfirmations {
