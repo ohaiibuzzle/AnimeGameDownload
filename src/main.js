@@ -9,6 +9,9 @@ let arrayofjokes = [
     "Did you try turning your Mac off and on again?",
     "Keyboard not found. Press F1 to continue",
     "Brain not found. Tap with hammer to continue",
+    "As developers our job is to insult users as frequently and ferociously as possible",
+    "Hmm, you're looking for something?",
+    "Isopropyl alcohol",
 ]
 
 function openLink1() {
