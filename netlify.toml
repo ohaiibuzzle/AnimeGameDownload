@@ -1,0 +1,15 @@
+[build]
+    base = "src/"
+    command = "echo 'Do Nothing'"
+
+[build.processing.js]
+    bundle = true
+    minify = true
+
+[build.processing.css]
+    bundle = true
+    minify = true
+[build.processing.html]
+    pretty_urls = true
+[build.processing.images]
+    compress = true
